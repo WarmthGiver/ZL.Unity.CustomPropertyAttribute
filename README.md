@@ -67,38 +67,6 @@ Collects all `CustomPropertyAttribute` declared in the field and draws the field
 1. Install via Unity Package Manager, or
 2. Copy files directly to your project's Assets folder
 
-## 📖 Usage
-
-```csharp
-using UnityEngine;
-
-public class ExampleScript : MonoBehaviour
-{
-    [Alias("Custom Name")]
-    [ReadOnly]
-    public string readOnlyField = "This is read only";
-    
-    [Button("Test Button", 30)]
-    public void TestMethod()
-    {
-        Debug.Log("Button clicked!");
-    }
-    
-    [Essential]
-    [Preview]
-    public Sprite spriteField;
-    
-    [LayerField]
-    public int layerIndex;
-    
-    [TagField] 
-    public string tagName;
-    
-    [GetComponent]
-    public Rigidbody rigidBody;
-}
-```
-
 ## 📋 Requirements
 
 - Unity 2019.4 or higher
@@ -108,26 +76,7 @@ public class ExampleScript : MonoBehaviour
 
 **ZION LEE**
 - 📧 Email: warmth.giver@gmail.com
-- 📱 Phone: 010-7725-1342
-
-## 📄 License
-
-Please contact for license information.
-
-## 🤝 Contributing
-
-If you want to contribute to this project:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## ⭐ Support
 
 If this project helped you, please give it a ⭐!
-
----
-
-*Make Unity Inspector customization easier and more efficient with Custom Property Attribute!*

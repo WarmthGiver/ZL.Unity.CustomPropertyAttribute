@@ -67,38 +67,6 @@ Unity에서 제공하는 `PropertyAttribute`와 `CustomPropertyDrawer`를 이용
 1. Unity Package Manager를 통해 설치하거나
 2. 프로젝트의 Assets 폴더에 직접 파일들을 복사합니다
 
-## 📖 사용법
-
-```csharp
-using UnityEngine;
-
-public class ExampleScript : MonoBehaviour
-{
-    [Alias("Custom Name")]
-    [ReadOnly]
-    public string readOnlyField = "This is read only";
-    
-    [Button("Test Button", 30)]
-    public void TestMethod()
-    {
-        Debug.Log("Button clicked!");
-    }
-    
-    [Essential]
-    [Preview]
-    public Sprite spriteField;
-    
-    [LayerField]
-    public int layerIndex;
-    
-    [TagField] 
-    public string tagName;
-    
-    [GetComponent]
-    public Rigidbody rigidBody;
-}
-```
-
 ## 📋 요구사항
 
 - Unity 2019.4 이상
@@ -108,26 +76,7 @@ public class ExampleScript : MonoBehaviour
 
 **이시온 (ZION LEE)**
 - 📧 Email: warmth.giver@gmail.com
-- 📱 Phone: 010-7725-1342
-
-## 📄 라이센스
-
-이 프로젝트의 라이센스 정보는 별도로 문의해주세요.
-
-## 🤝 기여하기
-
-이 프로젝트에 기여하고 싶으시다면:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## ⭐ 지원
 
 이 프로젝트가 도움이 되었다면 ⭐을 눌러주세요!
-
----
-
-*Unity Inspector 커스터마이징을 더욱 쉽고 효율적으로 만들어주는 Custom Property Attribute를 사용해보세요!*
