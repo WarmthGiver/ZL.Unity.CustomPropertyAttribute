@@ -2,15 +2,9 @@ namespace ZL.Unity
 {
     public sealed class ToggleIfAttribute : FieldConditionAttribute
     {
-        public ToggleIfAttribute(string fieldName, bool targetValue) : base(fieldName, targetValue)
-        {
+        public ToggleIfAttribute(string fieldName, bool targetValue) : base(fieldName, targetValue) { }
 
-        }
-
-        public ToggleIfAttribute(string fieldName, object targetValue, bool condition) : base(fieldName, targetValue, condition)
-        {
-
-        }
+        public ToggleIfAttribute(string fieldName, object targetValue, bool condition) : base(fieldName, targetValue, condition) { }
 
         #if UNITY_EDITOR
 

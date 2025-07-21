@@ -181,10 +181,7 @@ namespace ZL.Unity
                     Margin(EditorGUI.GetPropertyHeight(Property, PropertyLabel, true) + 2f);
                 }
 
-                catch
-                {
-
-                }
+                catch { }
             }
 
             public void DrawDefaultPropertyField()
