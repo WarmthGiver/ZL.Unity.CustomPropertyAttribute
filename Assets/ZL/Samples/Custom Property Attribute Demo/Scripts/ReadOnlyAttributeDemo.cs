@@ -22,6 +22,8 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [Space]
 
+        [SerializeField]
+
         private bool isReadOnly = false;
 
         [Space]
@@ -38,9 +40,9 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [Space]
 
-        [Text("[ReadOnlyIfEditMode]")]
+        [Text("[ReadOnlyIfPlayMode(true)]")]
 
-        [ReadOnlyIfEditMode]
+        [ReadOnlyIfPlayMode(true)]
 
         [UsingCustomProperty]
 
@@ -50,9 +52,9 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [Space]
 
-        [Text("[ReadOnlyIfPlayMode]")]
+        [Text("[ReadOnlyIfPlayMode(false)]")]
 
-        [ReadOnlyIfPlayMode]
+        [ReadOnlyIfPlayMode(false)]
 
         [UsingCustomProperty]
 

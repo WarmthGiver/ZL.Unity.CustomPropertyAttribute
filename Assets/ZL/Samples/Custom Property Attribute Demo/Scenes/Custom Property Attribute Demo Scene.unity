@@ -522,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test1: 
+  isReadOnly: 0
   test2: 
   test3: 
   test4: 

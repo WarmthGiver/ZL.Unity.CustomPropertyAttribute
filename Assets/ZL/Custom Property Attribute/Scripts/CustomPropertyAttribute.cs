@@ -77,20 +77,11 @@ namespace ZL.Unity
             }
         }
 
-        protected virtual void Initialize(Drawer drawer)
-        {
+        protected virtual void Initialize(Drawer drawer) { }
 
-        }
+        protected virtual void Preset(Drawer drawer) { }
 
-        protected virtual void Preset(Drawer drawer)
-        {
-
-        }
-
-        protected virtual void Draw(Drawer drawer)
-        {
-
-        }
+        protected virtual void Draw(Drawer drawer) { }
 
         [CustomPropertyDrawer(typeof(UsingCustomPropertyAttribute), true)]
 

@@ -12,7 +12,7 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
     public sealed class ButtonAttributeDemo : MonoBehaviour
 	{
-        [Margin]
+        [Space]
 
         [Text("[Button(\"PrintText\")]")]
 
