@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445285945}
-  - component: {fileID: 445285944}
+  - component: {fileID: 445285946}
   m_Layer: 0
   m_Name: Button Attribute Demo
   m_TagString: Untagged
@@ -356,19 +356,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &445285944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445285943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8828691077cea744b80026568824501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: Hello, World!
 --- !u!4 &445285945
 Transform:
   m_ObjectHideFlags: 0
@@ -384,6 +371,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445285946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445285943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9f119cc747d6c46abf0cade106bd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Hello, World!
 --- !u!1 &455248940
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
     [AddComponentMenu("")]
 
     public sealed class ButtonAttributeDemo : MonoBehaviour
-	{
+    {
         [Space]
 
         [Text("[Button(\"PrintText\")]")]
