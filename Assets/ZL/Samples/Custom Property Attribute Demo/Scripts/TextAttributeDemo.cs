@@ -158,13 +158,9 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [Space]
 
-        [Text("[Text(\"<color=#FF00FF><b><i>Hello World!</i></b></color>\",", RichText = false)]
+        [Text("[Text(\"<color=#FF00FF><b><i>Hello World!</i></b></color>\", TextAnchor.MiddleCenter, FontSize = 36, Height = 72f)]", RichText = false)]
 
-        [Text("TextAnchor.MiddleCenter, FontSize = 36, Height = 72f)]", RichText = false)]
-
-        [Text("<color=#FF00FF><b><i>Hello World!</i></b></color>",
-            
-            TextAnchor.MiddleCenter, FontSize = 36, Height = 72f)]
+        [Text("<color=#FF00FF><b><i>Hello World!</i></b></color>", TextAnchor.MiddleCenter, FontSize = 36, Height = 72f)]
 
         [UsingCustomProperty]
 

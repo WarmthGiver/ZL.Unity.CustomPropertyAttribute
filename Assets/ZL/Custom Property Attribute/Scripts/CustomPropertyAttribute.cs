@@ -89,6 +89,11 @@ namespace ZL.Unity
         {
             private Rect drawPosition;
 
+            public Rect DrawPosition
+            {
+                get => drawPosition;
+            }
+
             private float propertyHeight;
 
             public SerializedProperty Property { get; private set; }

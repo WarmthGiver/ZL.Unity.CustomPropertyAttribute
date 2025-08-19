@@ -8,6 +8,8 @@ namespace ZL.Unity
 
         private readonly GUIStyle style;
 
+        public bool WordWrap = true;
+
         public int FontSize { get; set; } = defaultFontSize;
 
         public bool RichText { get; set; } = true;
@@ -20,9 +22,11 @@ namespace ZL.Unity
 
             style = new GUIStyle()
             {
+                //wordWrap = true,
+
                 alignment = alignment,
 
-                richText = true,
+                //richText = true,
             };
 
             style.normal.textColor = DefaultTextColor;
@@ -32,19 +36,23 @@ namespace ZL.Unity
 
         protected override void Initialize(Drawer drawer)
         {
+            style.wordWrap = WordWrap;
+
             style.fontSize = FontSize;
 
             style.richText = RichText;
-
-            if (Height == 0f)
-            {
-                Height = style.CalcSize(label).y;
-            }
         }
 
         protected override void Draw(Drawer drawer)
         {
-            drawer.DrawText(Height, label, style);
+            float height = Height;
+
+            if (height == 0f)
+            {
+                height = style.CalcHeight(label, drawer.DrawPosition.width);
+            }
+
+            drawer.DrawText(height, label, style);
         }
 
         #endif
