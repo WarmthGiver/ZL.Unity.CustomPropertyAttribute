@@ -28,8 +28,6 @@ namespace ZL.Unity
             if (drawer.Property.objectReferenceValue == null)
             {
                 drawer.DrawErrorBox($"{AttributeNameTag} This field must be assigned.");
-
-                return;
             }
         }
 
