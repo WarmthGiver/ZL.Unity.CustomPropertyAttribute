@@ -1,4 +1,4 @@
-# [Custom Property Attribute]
+# [Custom Property Attribute] v1.1
 
 🌍 [English](README.md) | [한국어](README_KOR.md)
 
@@ -15,62 +15,103 @@ We built this using Unity's `PropertyAttribute` and `CustomPropertyDrawer` and i
 ### CustomPropertyAttribute
 The base class for creating new `CustomPropertyAttribute`.
 
-- **Initialize**: Initializes the attribute
-- **Preset**: Sets the state of the field
-- **Draw**: Draws the field
-
 ### [UsingCustomProperty]
 Collects all `CustomPropertyAttribute` declared in the field and draws the fields at once. This solves the problem of applying multiple `PropertyAttribute` to a single field.
 
 ## 🚀 Features
 
-### Field Customization
-- **[Alias]**: Assign aliases to fields
-- **[ReadOnly]**: Set fields as read-only
-- **[ReadOnlyIfPlayMode]**: Set as read-only only under specific conditions
-- **[ReadOnlyIf]**: Conditional read-only based on field value comparison
-- **[Toggle]**: Disable fields and attributes
+### CustomPropertyAttribute
 
-### UI Elements
-- **[Button]**: Display functions as buttons in the inspector
-- **[Preview]**: Display preview of image objects
-- **[Text]**: Draw custom text (color, alignment, style, font size configurable)
+You can create a new ‘CustomPropertyAttribute’ by inheriting the corresponding class. The ‘Initialize’ function initializes the attribute. The ‘Preset’ function sets the state of the field, and the ‘Draw’ function draws the field.
 
-### Validation & Warnings
-- **[Essential]**: Display warning messages when Object type fields are null or string fields are empty
-- **[ErrorBox]**: Display error message boxes
-- **[WarningBox]**: Display warning message boxes
-- **[InfoBox]**: Display info message boxes
-- **[MessageBox]**: Display general message boxes
+### [Alias]
 
-### Auto Assignment
-- **[GetComponent]**: Automatically find and assign components of the corresponding type
-- **[GetComponentInChildren]**: Find and assign components in child objects
-- **[GetComponentInChildrenOnly]**: Find and assign components only in child objects
-- **[GetComponentInParent]**: Find and assign components in parent objects
-- **[GetComponentInParentOnly]**: Find and assign components only in parent objects
+Assign aliases to fields. Specify ‘Null’ as a parameter to draw an empty label. Specify ‘Empty(“”)’ to not draw a label.
 
-### Field Type Conversion
-- **[LayerField]**: Display int type fields as Layer dropdown
-- **[TagField]**: Display string type fields as Tag dropdown
-- **[LabelField]**: Draw only the field labels
-- **[PropertyField]**: Draw fields before other attributes
+### [Button]
 
-### Layout & Styling
-- **[AddIndent]**: Indent fields by specified value
-- **[SetIndent]**: Specify the indentation position of fields
-- **[Line]**: Draw dividing lines (color and thickness configurable)
-- **[Margin]**: Draw margins (height configurable)
+Displays the function as a button in the inspector. You can specify the text and height of the button as parameters.
+
+### [ReadOnly]
+
+Sets the fields and attributes as read-only.
+
+### [ReadOnlyIf]
+### [ReadOnlyIfPlayMode]
+
+Set as read-only only under specific conditions, such as when the value of a specific field is compared or when the application is playing.
+
+### [Toggle]
+
+Disables the fields and attributes declared under the specified attribute. It is also possible to disable them only under specific conditions by comparing the status of specific fields.
+
+### [Essetial]
+
+Displays a warning message when the field value is ‘Null’ or ‘Empty (“”)’.
+
+### [PropertyField]
+
+Draw the field before other attributes.
+
+### [LabelField]
+
+Draw only the labels in the field.
+
+### [LayerField]
+
+Displays the ‘int’ type field as the ‘Layer’ drop-down menus.
+
+### [TagField]
+
+Displays the ‘string’ type field as the ‘Tag’ drop-down menus.
+
+### [GetComponent]
+### [GetComponentInParent]
+### [GetComponentInParentOnly]
+### [GetComponentInChildren]
+### [GetComponentInChildrenOnly]
+
+Finds and assigns components of the corresponding type to the ‘Component’ type field within each scope.
+
+### [MessageBox]
+### [InfoBox]
+### [WarningBox]
+### [ErrorBox]
+
+Draw a message box with the corresponding icon.
+
+### [AddIndent]
+
+Indents the field by the specified value.
+
+### [SetIndent]
+
+Specifies the amount of indentation in the field.
+
+### [Line]
+
+Draw a dividing line. You can specify the color and thickness of the line with parameters.
+
+### [Margin]
+
+Draws a margin. You can specify the height of the margin as a parameter.
+
+### [Preview]
+
+Draws a preview for ‘Object’ type fields containing images such as Texture, Sprite, GameObject, and Material.
+
+### [Text]
+
+Draws text. You can specify the color, alignment position, style, and font size of the text as parameters.
+
+### [Require]
+
+Automatically adds and assigns the required components.
 
 ## 🛠️ Installation
 
 1. Install via Unity Package Manager, or
 2. Copy files directly to your project's Assets folder
-
-## 📋 Requirements
-
-- Unity 2019.4 or higher
-- .NET Framework 4.x
 
 ## 👨‍💻 Developer
 
