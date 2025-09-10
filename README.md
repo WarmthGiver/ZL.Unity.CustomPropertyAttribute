@@ -13,16 +13,14 @@ We built this using Unity's `PropertyAttribute` and `CustomPropertyDrawer` and i
 ## ✨ Key Technology
 
 ### CustomPropertyAttribute
+
 The base class for creating new `CustomPropertyAttribute`.
 
 ### [UsingCustomProperty]
+
 Collects all `CustomPropertyAttribute` declared in the field and draws the fields at once. This solves the problem of applying multiple `PropertyAttribute` to a single field.
 
 ## 🚀 Features
-
-### CustomPropertyAttribute
-
-You can create a new ‘CustomPropertyAttribute’ by inheriting the corresponding class. The ‘Initialize’ function initializes the attribute. The ‘Preset’ function sets the state of the field, and the ‘Draw’ function draws the field.
 
 ### [Alias]
 
