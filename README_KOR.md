@@ -1,4 +1,4 @@
-# [Custom Property Attribute]
+# [Custom Property Attribute] v1.1
 
 🌍 [English](README.md) | [한국어](README_KOR.md)
 
@@ -13,64 +13,103 @@ Unity에서 제공하는 `PropertyAttribute`와 `CustomPropertyDrawer`를 이용
 ## ✨ 핵심 기술
 
 ### CustomPropertyAttribute
+
 새로운 `CustomPropertyAttribute`를 만들기 위한 기본 클래스입니다.
 
-- **Initialize**: Attribute를 초기화합니다
-- **Preset**: 필드의 상태를 설정합니다
-- **Draw**: 필드를 그립니다
-
 ### [UsingCustomProperty]
+
 필드에 선언된 모든 `CustomPropertyAttribute`를 수집하여 한 번에 필드를 그립니다. 이를 통해 하나의 필드에 여러 개의 `PropertyAttribute`를 적용할 수 있는 문제를 해결합니다.
 
 ## 🚀 주요 기능
 
-### 필드 커스터마이징
-- **[Alias]**: 필드에 별칭을 부여합니다
-- **[ReadOnly]**: 필드를 읽기 전용으로 설정합니다
-- **[ReadOnlyIfPlayMode]**: 특정 조건에서만 읽기 전용으로 설정합니다
-- **[ReadOnlyIf]**: 특정 필드 값 비교를 통한 조건부 읽기 전용 설정
-- **[Toggle]**: 필드 및 Attribute를 비활성화합니다
+### [Alias]
 
-### UI 요소
-- **[Button]**: 함수를 인스펙터에 버튼으로 표시합니다
-- **[Preview]**: 이미지 오브젝트의 미리보기를 표시합니다
-- **[Text]**: 커스텀 텍스트를 그립니다 (색상, 정렬, 스타일, 폰트 크기 지정 가능)
+필드에 별칭을 부여합니다. 매개변수로 ‘Null’을 지정하면 빈 라벨을 그립니다. ‘Empty("")’를 지정하면 라벨을 그리지 않습니다.
 
-### 검증 및 경고
-- **[Essential]**: Object 타입 필드가 null이거나 string 필드가 비어있을 때 경고 메시지를 표시합니다
-- **[ErrorBox]**: 오류 메시지 박스를 표시합니다
-- **[WarningBox]**: 경고 메시지 박스를 표시합니다
-- **[InfoBox]**: 정보 메시지 박스를 표시합니다
-- **[MessageBox]**: 일반 메시지 박스를 표시합니다
+### [Button]
 
-### 자동 할당
-- **[GetComponent]**: 해당 타입의 컴포넌트를 자동으로 찾아서 할당합니다
-- **[GetComponentInChildren]**: 자식 오브젝트에서 컴포넌트를 찾아 할당합니다
-- **[GetComponentInChildrenOnly]**: 자식 오브젝트에서만 컴포넌트를 찾아 할당합니다
-- **[GetComponentInParent]**: 부모 오브젝트에서 컴포넌트를 찾아 할당합니다
-- **[GetComponentInParentOnly]**: 부모 오브젝트에서만 컴포넌트를 찾아 할당합니다
+함수를 인스펙터에 버튼으로 표시합니다. 매개변수로 버튼의 텍스트와 높이를 지정할 수 있습니다.
 
-### 필드 타입 변환
-- **[LayerField]**: int 타입 필드를 Layer 드롭다운으로 표시합니다
-- **[TagField]**: string 타입 필드를 Tag 드롭다운으로 표시합니다
-- **[LabelField]**: 필드의 라벨만 따로 그립니다
-- **[PropertyField]**: 필드를 다른 Attribute보다 먼저 그립니다
+### [ReadOnly]
 
-### 레이아웃 및 스타일링
-- **[AddIndent]**: 필드를 지정한 값만큼 들여쓰기합니다
-- **[SetIndent]**: 필드의 들여쓰기 위치를 지정합니다
-- **[Line]**: 구분선을 그립니다 (색상과 굵기 지정 가능)
-- **[Margin]**: 여백을 그립니다 (높이 지정 가능)
+필드 및 Attribute들을 읽기 전용으로 설정합니다.
+
+### [ReadOnlyIf]
+### [ReadOnlyIfPlayMode]
+
+특정 필드의 값 비교, 어플리케이션이 실행중인지 아닌지 등 특정 조건에서만 읽기 전용으로 설정합니다.
+
+### [Toggle]
+
+해당 Attribute 하위에 선언된 필드 및 Attribute들을 비활성화시킵니다. 특정 필드의 상태 비교로 특정 조건에서만 비활성화하는 것도 가능합니다.
+
+### [Essetial]
+
+필드의 값이 'Null' 또는 'Empty(“”)' 일 때 경고 메시지를 표시합니다.
+
+### [PropertyField]
+
+필드를 다른 Attribute보다 먼저 그립니다.
+
+### [LabelField]
+
+필드의 라벨만 따로 그립니다.
+
+### [LayerField]
+
+‘int’ 타입 필드를 ‘Layer’ 드롭다운 메뉴로 표시합니다.
+
+### [TagField]
+
+‘string’ 타입 필드를 ‘Tag’ 드롭다운 메뉴로 표시합니다.
+
+### [GetComponent]
+### [GetComponentInParent]
+### [GetComponentInParentOnly]
+### [GetComponentInChildren]
+### [GetComponentInChildrenOnly]
+
+‘Component’ 타입 필드에 해당 타입의 컴포넌트를 각 범위 내에서 찾아서 할당합니다.
+
+### [MessageBox]
+### [InfoBox]
+### [WarningBox]
+### [ErrorBox]
+
+각자 해당하는 아이콘과 함께 메시지 박스를 그립니다
+
+### [AddIndent]
+
+필드를 지정한 값만큼 들여 씁니다.
+
+### [SetIndent]
+
+필드의 들여 쓴 정도를 지정합니다.
+
+### [Line]
+
+구분선을 그립니다. 매개변수로 선의 색상과 굵기를 지정할 수 있습니다.
+
+### [Margin]
+
+여백을 그립니다. 매개변수로 여백의 높이를 지정할 수 있습니다.
+
+### [Preview]
+
+Texture, Sprite, GameObject, Material 등 이미지가 존재하는 ‘Object’ 타입 필드의 미리 보기를 그립니다.
+
+### [Text]
+
+텍스트를 그립니다. 매개변수로 텍스트의 색상과 정렬 위치, 스타일, 폰트 크기를 지정할 수 있습니다.
+
+### [Require]
+
+필수적인 Component를 자동 추가 및 할당합니다.
 
 ## 🛠️ 설치 방법
 
 1. Unity Package Manager를 통해 설치하거나
 2. 프로젝트의 Assets 폴더에 직접 파일들을 복사합니다
-
-## 📋 요구사항
-
-- Unity 2019.4 이상
-- .NET Framework 4.x
 
 ## 👨‍💻 개발자
 
