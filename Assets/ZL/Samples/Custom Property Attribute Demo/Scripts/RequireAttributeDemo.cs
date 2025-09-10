@@ -18,7 +18,7 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [SerializeField]
 
-        private RequireTest1 test1 = null;
+        private Transform transform = null;
 
         [Space]
 
@@ -30,7 +30,7 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [SerializeField]
 
-        private RequireTest2 test2 = null;
+        private CapsuleCollider collider = null;
 
         [Space]
 
@@ -42,6 +42,6 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [SerializeField]
 
-        private RequireTest3 test3 = null;
+        private Rigidbody rigidbody = null;
     }
 }

@@ -491,7 +491,6 @@ GameObject:
   m_Component:
   - component: {fileID: 872403492}
   - component: {fileID: 872403491}
-  - component: {fileID: 872403495}
   - component: {fileID: 872403494}
   - component: {fileID: 872403493}
   m_Layer: 0
@@ -513,9 +512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa9bf656a02e58418d17b08d39e3e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test1: {fileID: 872403495}
-  test2: {fileID: 872403494}
-  test3: {fileID: 872403493}
+  transform: {fileID: 872403492}
+  collider: {fileID: 872403494}
+  rigidbody: {fileID: 872403493}
 --- !u!4 &872403492
 Transform:
   m_ObjectHideFlags: 0
@@ -531,42 +530,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872403493
-MonoBehaviour:
+--- !u!54 &872403493
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872403487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 054f187dc75303f42a38e7ce4954f06b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &872403494
-MonoBehaviour:
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &872403494
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872403487}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848f26f42858d5e40a2e3672b45302cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &872403495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872403487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80f90a510245fba40aa4d40ad8c56622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &989788688
 GameObject:
   m_ObjectHideFlags: 0

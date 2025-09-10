@@ -6,7 +6,7 @@ namespace ZL.Unity
     {
         #if UNITY_EDITOR
 
-        private bool isTypeValid;
+        private bool isTypeValid = false;
 
         protected override void Initialize(Drawer drawer)
         {
