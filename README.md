@@ -1,6 +1,6 @@
 # [Custom Property Attribute] v1.1.1
 
-🌍 [ENG](README.md) | [KOR](README_KOR.md)
+🌍 [English](README.md) | [한국어](README_KOR.md)
 
 A collection of CustomPropertyAttribute that allows easy customization of Unity Inspector.
 
