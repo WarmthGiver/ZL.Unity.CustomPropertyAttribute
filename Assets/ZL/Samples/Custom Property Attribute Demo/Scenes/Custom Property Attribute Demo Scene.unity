@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 314571757}
   - component: {fileID: 314571758}
   m_Layer: 0
-  m_Name: Help Box Attribute Demo
+  m_Name: Message Box Attribute Demo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,8 +428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7f53392fb43134f9224b2800f6b78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test1: {fileID: 0}
-  test2: 
+  test1: {fileID: 455248941}
+  test2: Hello, World!
 --- !u!1 &860003687
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test1: 
-  isReadOnly: 0
+  isReadOnly: 1
   test2: 
   test3: 
   test4: 
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be88da67f7d9c594b80feffbcbe6e662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggle: 0
+  toggle: 1
   test1: 
   test2: 
   test3: 
@@ -806,7 +806,7 @@ MonoBehaviour:
   test1: 
   test2: 
   test3: 0
-  test4: Untagged
+  test4: 
   test5: Untagged
   test6: 0
 --- !u!1 &1666352355
@@ -1090,10 +1090,10 @@ SceneRoots:
   - {fileID: 455248941}
   - {fileID: 1528115982}
   - {fileID: 140825264}
-  - {fileID: 314571757}
   - {fileID: 1081819931}
   - {fileID: 433544922}
   - {fileID: 2181900}
+  - {fileID: 314571757}
   - {fileID: 1200856164}
   - {fileID: 1978196252}
   - {fileID: 872403492}

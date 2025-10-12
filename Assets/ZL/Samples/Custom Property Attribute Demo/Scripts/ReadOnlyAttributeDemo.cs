@@ -28,9 +28,9 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 
         [Space]
 
-        [Text("[ReadOnlyIf(true)]")]
+        [Text("[ReadOnlyIf(nameof(isReadOnly), true)]")]
 
-        [ReadOnlyIf("isReadOnly", true)]
+        [ReadOnlyIf(nameof(isReadOnly), true)]
 
         [UsingCustomProperty]
 

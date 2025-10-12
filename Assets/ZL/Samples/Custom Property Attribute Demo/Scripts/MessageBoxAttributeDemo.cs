@@ -10,7 +10,7 @@ namespace ZL.Unity.Demo.CustomPropertyAttributeDemo
 {
     [AddComponentMenu("")]
 
-    public sealed class HelpBoxAttributeDemo : MonoBehaviour
+    public sealed class MessageBoxAttributeDemo : MonoBehaviour
     {
         [Space]
 
